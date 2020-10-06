@@ -1,6 +1,11 @@
 FROM python:3.7
 
-RUN apt-get update && apt-get install -y libsuitesparse-dev git libglu1-mesa
+RUN apt-get update && apt-get install -y\
+    libsuitesparse-dev\
+    git\
+    libglu1-mesa\
+    libxcursor1\
+    libxinerama1
 
 RUN pip install numpy\
     scipy\
