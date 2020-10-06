@@ -1,4 +1,3 @@
-# action.yml
 name: 'scikit-fem integration tests'
 description: 'Run scikit-fem tests using external packages'
 runs:
