@@ -6,4 +6,4 @@ if [[ -z "${GITHUB_WORKSPACE}" ]]; then
 else
     TEST_DIR="${GITHUB_WORKSPACE}"
 fi
-cd $TEST_DIR && pytest
+cd $TEST_DIR && flake8 skfem && mypy skfem && pytest

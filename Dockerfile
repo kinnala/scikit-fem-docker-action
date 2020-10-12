@@ -16,7 +16,9 @@ RUN pip install numpy\
     pacopy\
     pygmsh\
     pyamg\
-    pytest
+    pytest\
+    flake8\
+    mypy
 
 RUN pip install scikit-sparse
 
