@@ -18,7 +18,9 @@ RUN pip install numpy\
     pyamg\
     pytest\
     flake8\
-    mypy
+    mypy\
+    sphinx\
+    sphinx_rtd_theme
 
 RUN pip install scikit-sparse
 
