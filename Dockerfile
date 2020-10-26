@@ -15,6 +15,7 @@ RUN pip install numpy\
     dmsh\
     pacopy\
     pygmsh\
+    gmsh\
     pyamg\
     pytest\
     flake8\
