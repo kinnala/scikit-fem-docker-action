@@ -6,23 +6,8 @@ RUN apt-get update && apt-get install -y\
     libglu1-mesa\
     libxcursor1\
     libxinerama1
-
-RUN pip install numpy\
-    scipy\
-    matplotlib\
-    ipython\
-    meshio\
-    dmsh\
-    pacopy\
-    pygmsh\
-    pyamg\
-    pytest\
-    flake8\
-    mypy\
-    sphinx\
-    sphinx_rtd_theme
-
-RUN pip install scikit-sparse
+ADD https://raw.githubusercontent.com/kinnala/scikit-fem/master/requirements.txt .
+RUN pip install -r requirements.txt
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 777 entrypoint.sh
